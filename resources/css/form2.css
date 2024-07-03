@@ -1,0 +1,61 @@
+form {
+  /* Centrar el formulario en la pagina */
+  margin: 0 auto: width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 2px solid #CCC;
+  border-radius: 1em;
+}
+
+.form2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form2 form li+li {
+  margin-top: 1em;
+}
+
+.form2 label {
+  /* Tamaño y alineacion uniforme */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+.form2 input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma 
+                        configuracion de letra. Por defecto, las aareas de texto tienen
+                        un tipo de letra monoespaciada */
+
+  font: 1em sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+.form2 input:focus,
+textarea:focus {
+  /* Tamaño uniforme del campo de texto */
+  border-color: #000;
+}
+
+.form2 textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.form2 .button {
+  padding-left: 90px;
+}
+
+button {
+
+  margin-left: .5em;
+}

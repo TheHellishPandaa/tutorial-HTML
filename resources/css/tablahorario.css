@@ -1,0 +1,51 @@
+.horariotabla {
+
+    border: 2px solid rgb(168, 168, 168); 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.horariotabla thead tr:nth-of-type(2) th::first-letter{
+    font-size: 1.5em;
+}
+
+
+.horariotabla th, .horariotabla td {
+
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+
+}
+
+
+.horariotabla tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.ISO {
+    background-color: #00ff08;
+}
+.PAR{
+    background-color: #b4c007;
+
+}
+.FOL{
+    background-color: #e6954b;
+
+}
+.FH{
+    background-color: #e4be9c;
+
+}
+.INGLES{
+    background-color: #ffe600;
+
+}
+.LMSG{
+    background-color: #6b6ef0;
+
+}
+.GBD{
+    background-color: #6bf0a7;
+
+}
