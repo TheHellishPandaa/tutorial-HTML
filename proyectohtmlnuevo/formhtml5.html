@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="resources/css/estilo.css" />
+    <link rel="icon" href="resources/img/azarquiel.ico" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/stackoverflow-dark.min.css">
+    <script src="resources/js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+        </header>
+        <main>
+            <nav>
+                <ul class="menu">
+                    <li class="menuitem"><a href="index.html">Home</a></li>
+                    <li class="menuitem"><a href="texto.html">Elementos de texto</a></li>
+                    <li class="menuitem"><a href="enlaces.html">Hipervinculos</a></li>
+                    <li class="menuitem"><a href="tablas.html">Tablas</a></li>
+                    <li class="menuitem"><a href="multimedia.html">Multimedia</a></li>
+                    <li class="menuitem"><a href="formularios.html">Formularios</a></li>
+                    <li class="menuitem"><a href="formpago.html">Formulario de pago</a></li>
+                    <li class="menuitem"><a href="formhtml5.html">Form html5</a></li>
+                </ul>
+                
+            </nav>
+            <div class="content">
+                <h1 class="azulcobalto centrar">Controles HTML5</h1>
+                <form action="">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <pre></pre>
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url" required/>
+                <pre></pre>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="bday" required>
+                <pre></pre>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+                <pre></pre>
+                <label for="mes">Mes:</label>
+                <input type="text" id="mes" name="mes" pattern="[A-Za-z]+" title="Por favor, introduce solo letras" required>
+                <pre></pre>
+                <label for="semana">Semana:</label>
+                <input type="text" id="semana" name="semana" pattern="[A-Za-z]+" title="Por favor, introduce solo letras" required>
+                <pre></pre>
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="phone" required>
+                <pre></pre>
+                <label for="numero">Numero:</label>
+                <input type="number" id="numero" name="num" required>
+                <pre></pre>
+                <label for="rango">Rango:</label>
+                <input type="range" id="rango" name="rango" min="0" max="100" step="5"/>
+                <output name="result" for="rango">50</output>
+                <pre></pre>
+                <label for="color">Color:</label>
+                <input type="color" id="color" name="color">
+                <pre></pre>
+                <label for="busqueda">Buscar</label>
+                <input type="search" id="busqueda" name="search" required>
+                <pre></pre>
+                <input type="submit" value="Enviar">
+                </form>
+               <div>
+                
+            </div>
+        </main>
+        <footer>
+            <h2>&copy;VS1ASIR 2023</h2>
+        </footer>
+    </div>
+
+</body>
+
+</html>

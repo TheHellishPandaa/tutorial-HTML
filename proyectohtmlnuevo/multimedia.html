@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inicio</title>
+	<link rel="stylesheet" href="resources/css/estilo.css" />
+	<link rel="icon" href="resources/img/azarquiel.ico" type="image/x-icon">
+	<link rel="stylesheet" href="resources/css/stackoverflow-light.min.css">
+	<script src="resources/js/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+		</header>
+		<main>
+			<nav>
+				<ul class="menu">
+					<li class="menuitem"><a href="index.html">Home</a></li>
+					<li class="menuitem"><a href="texto.html">Elementos de texto</a></li>
+					<li class="menuitem"><a href="enlaces.html">Hipervinculos</a></li>
+					<li class="menuitem"><a href="tablas.html">Tablas</a></li>
+					<li class="menuitem"><a href="multimedia.html">Multimedia</a></li>
+					<li class="menuitem"><a href="formularios.html">Formularios</a></li>
+					<li class="menuitem"><a href="formpago.html">Formulario de pago</a></li>
+					<li class="menuitem"><a href="formhtml5.html">Form html5</a></li>
+				</ul>
+			</nav>
+			<div class="content">
+				<h1 class="azulcobalto centrar">Imagenes en HTML</h1>
+				<pre></pre>
+
+				<p>Para poner una imagen simple en una página web, utilizamos el elemento <span
+						class="etiqueta">&lt;img&gt;</span>
+				<pre></pre>
+
+				<p>Se trata de un elemento vacío (lo que significa que no contiene texto o etiqueta de cierre). El
+					atributo src es obligatorio y contiene la ruta que apunta a la imagen que quieres poner en la
+					página, que puede ser una URL relativa o absoluta, de la misma forma que el elemento <span
+						class="etiqueta">&lt;a&gt;</span>
+					contiene los valores del atributo href.</p>
+				<pre></pre>
+
+				Por ejemplo si nuestra imagen se llama dinosaur.jpg, y está en la ubicación habitual donde
+				mos el siguiente código para mostrar la imagen
+				<pre></pre>
+
+				alojamos las imágnes: (resources/img), escrbimos el siguiente codigo para adjuntar una imagen:
+
+				<pre>
+			<code class="language-html">
+&lt;img src="resources/img/dinosaur.jpg" &lt;/img&gt;
+				</code>
+				</pre>
+
+				<p>El resultado sería:</p>
+				<img src="resources/img/dinosaur.jpg"></img>
+				<pre></pre>
+				<p>Puedes incrustar la imagen usando una URL Absoluta, por ejemplo</p>
+				<pre>
+	 <code class="language-html">
+&lt;img src="https://www.example.com/img/dinosaur.jpg"&gt;
+	 </code>
+	 </pre>
+				Pero esto no tiene sentido, solo hace que el navegador trabaje mas buscando la direccion IP
+				desde el servidor DNS cada vez, etc. Casi siempre mantendras las imagenes en el mismo servidor
+				que tu HTML
+				<pre></pre>
+				Advertencia: La mayoría de imágenes tienen derechos de autor. No muestres una imagen en tu
+				página web a menos que:
+				<pre></pre>
+				<ul>
+					<li>seas dueño de la imagen</li>
+					<li>tengas permiso escrito explícito del dueño de la imagen o</li>
+					<li>tengas suticientes pruebas de que la imagen es de dominio público.</li>
+
+				</ul>
+				<pre></pre>
+				<p>El incumplimiento de las normas de los derechos de autor es un acto
+					ilegal y poco ético. Por lo tanto, no apuntes nunca tu atributo src a una imagen que esté alojada en
+					un sitio veb si no
+					tienes el permiso para hacerlo. Esto se llama hotlnking. Asimismo es ¡legal robar el ancho de
+					banda de alguien. Además, ralentiza tu página y te deja sin control sobre la imagen si la
+					eliminan o reemplazan por otra que incluso podría resultar embarazoso.</p>
+				<pre></pre>
+				<h2 class="azulcobalto">Texto alternativo</h2>
+				<pre></pre>
+				El próximo atributo que veremos es alt. Su valor debe ser una descripción textual de la imagen
+				para usarla en situaciones en que la imagen no puede ser vista/mostrada o tarde demasiado en
+				mostrarse por una conexión lenta a internet. Por ejemplo, nuestro código anterior podría
+				modificarse así
+				<pre>
+	<code class="language-html">
+		&lt;img src="resources/img/dinosaur.jpg"
+		alt="La cabeza y el torso de un esqueleto de dinosaurio;
+		tiene una cabeza grande con dientes largos y afilados”/>
+</pre>
+				</code>
+
+				Para probar el etecto de la etiqueta alt, escribe mal el nombre del archivo al crear la etiqueta y
+				observa que pasa al visualizar la página.
+
+				La cabeza y el torso de un esqueleto de dinosauno; tiene una cabera grande con dientes largos y
+				atilados
+
+				Usamos un texto alternativo por las siguientes razones
+				<pre></pre>
+				<ul>
+					<li>El usuario tiene alguna discapacidad visual y utiliza un lector de pantalla para leer el
+						contenido de la web. De hecho, disponer de texto alternativo para describir las imágenes es
+						útil para la mayoría de los usuarios</li>
+
+					<li>Como ya hemos dicho anteriormente, es posible que se haya es
+						archivo o su ruta.</li>
+
+					<li>El navegador no admite el tipo de imagen. Algunas personas aún usan navegadores de solo
+						texto, como Lynx, que muestran el texto del atributo alt.</li>
+
+					<li>Quieres que los motores de búsqueda puedan utilizar este texto. Por ejemplo, los motores de
+						búsqueda pueden hacer coincidir el texto alternativo con la consulta de búsqueda.</li>
+
+					<li>Los usuarios han desactivado las imágenes para reducir el volumen de transferencia de datos
+						y de distracciones. Esto sucede especialmente en teléfonos móviles y en países en que el
+						ancho de banda es limitado y caro.</li>
+				</ul>
+				<h2 class="azulcobalto">Anchura y altura</h2>
+				<pre></pre>
+				Puedes usar los atributos ancho (width) y alto (height) para especificar la anchura y altura de tu
+				imager. Puedes encontrar el ancho y el alto de Lu imagen de diversas maneras, En windows puedes
+				hacerlo examinando las propiedades del archivo de imayen, pesLaña detalles, La imayen original
+				del dinosaurio tiene 400 pixeles de ancho por 341 de alto.
+				Sí la imagen no se ajusta a la zona en la que la queremos
+				alto mediante los atributos width y height.
+
+				Si modificas cl tamaño haciendo uso de dichos atributos, debes saber que la imagen puede verse
+				desproporcionada si no mantienes la proporción de aspecto entre el ancho y cl alto. También sí la
+				escalas mucho puede verse granulada.
+
+				La mejor manera de mantener la proporcionalidad es usar solo uno de los atributos. La imagen se
+				ajusta de forma automática manteniendo la proporción. Por ejemplo vamos a mostrar la imagen
+				del dinosaurio con un ancho de 250 pixeles, usando el atributo widih. Veremos como la imagen sc
+				muestra proporcionada.
+				<pre>
+	<code class="language-html">
+
+&lt;img src="resources/img/dinasaur.jpg"
+alt="La cabeza y el torzo de un esqueleto de dinosaurio;
+tiene una cabeza grande con dientes largos y afilados
+width="250"/>
+</pre>
+				</code>
+				<img src="resources/img/dinosaur.jpg" alt="La cabeza y el torzo de un esqueleto de dinosaurio;
+tiene una cabeza grande con dientes largos y afilados" width="250" />
+				<pre></pre>
+				<h2 class="azulcobalto">Titulo en las imagenes</h2>
+				<p>Al igual que con los enlaces, tambien puedes añadir atributos title a las imagenes para
+					proporcionar mas informacion de ayuda si es necesario. En nuestro ejemplo, podriamos hacer esto:</p>
+				<pre>
+	<code class="language-html">
+&lt;img src="resources/img/dinasaur.jpg"
+alt="La cabeza y el torzo de un esqueleto de dinosaurio;
+tiene una cabeza grande con dientes largos y afilados
+width="250"
+title="Expocicion de un T-Rex en el museo de la Universidad de Manchester./>
+
+</code>
+	</pre>
+				<img src="resources/img/dinosaur.jpg" alt="La cabeza y el torzo de un esqueleto de dinosaurio;
+tiene una cabeza grande con dientes largos y afilados" width="250"
+					title="Expocicion de un T-Rex en el museo de la Universidad de Manchester."></p>
+				<pre></pre>
+				<h2 class="azulcobalto">Comentar imágenes con figure y figcaption</h2>
+				<pre></pre>
+				HTML5 incluye dos nuevas etiquetas <span class="etiqueta">&lt;fiqure&gt;</span> y <span
+					class="etiqueta">&lt;figcaption&gt;</span> que permiten vincular una figura con
+				su pie de imagen, El elemento <span class="etiqueta">&lt;fiqure&gt;</span> actua de contenedor semántico
+				para la imagen y el
+				elemento <span class="etiqueta">&lt;figcaption&gt;</span> dice al navegador, o a alguna tecnología de
+				apoyo, que el texto que
+				contiene describe la imagen que está contenida en el elemento. Ejemplo de uso:
+				<pre>
+	<code class="language-html">
+&lt;figure&gt;
+&lt;img src="resources/img/dinasaur.jpg"
+alt="La cabeza y el torzo de un esqueleto de dinosaurio;
+tiene una cabeza grande con dientes largos y afilados
+width="250"
+title="Expocicion de un T-Rex en el museo de la Universidad de Manchester"
+&lt;figcaption&gt;
+Exposición de un T-Rex en el musco de la Universidad de Manchester.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+</code>
+</pre>
+				<figure>
+					<img src="resources/img/dinosaur.jpg" alt="La cabeza y el torzo de un esqueleto de dinosaurio;
+tiene una cabeza grande con dientes largos y afilados" width="250"
+						title="Expocicion de un T-Rex en el museo de la Universidad de Manchester">
+					<figcaption>
+						Exposición de un T-Rex en el musco de la Universidad de Manchester.
+					</figcaption>
+				</figure>
+				<h2 class="azulcobalto">Imágenes de fondo CSS</h2>
+
+				También puedes usar CSS para insertar imágenes en páginas web . La propiedad CSS basckground-image
+				y las demás propiedades background-" se usan para controlar la colocación de la imagen de
+				fondo. Por ejemplo, gara poner la imagen del dinosaurio como imagen de fondo de los párrafos
+				que queramos, usando una clase CSS para ello. Fodemos definir la clase CSS fondodinosaurio asi:
+				<pre>
+	<code class="language-html">
+.fondodinosaurio{
+background-inage: url(../img/dinosaur. jpg);
+}
+</code>
+</pre>
+
+				Y depues crear un párrafo con el atributo class igual a “fondodinosaurio”
+				<pre>
+	<code class="language-html">
+&lt;p class="fondodinosaurio"&gt;
+&lt;/p&gt;
+</code>
+       </pre>
+				<p class="fondodinosaurio">Si escribes algo de texto en el parrafo observaras que la imagen de fondo
+					comienza a aparezer. Sigues escribiendo y la imagen de fondo se sigue mostrando para ocupar todo el
+					parrafo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores debitis
+					impedit ex dolore fuga fugit iure hic tempora eligendi sit temporibus, blanditiis perferendis
+					corporis deleniti minus eum, eaque aspernatur.
+				</p>
+				<p>Si solo quisieras mostrar la imagen, porque esta no esta no aporta contenido, semantico al texto y
+					solo es decorativa
+					el contenedor de la misma debe tener el suficiente espacio para contenerla. Puedes emplear algunas
+					propiedades adicionales CSS paralograr que la imagen se muestre proporcionada dentro de la altura
+					que decidas que debe tener. A continuacion se muestra la regla CSS necesaria para conseguir mostrar
+					una imagen como la imagen de fondo en un parrafo y que esta tenga una altura de 200px.
+				</p>
+				<pre>
+					<code class="language-html">
+.fondodinosaurio2{
+background-inage: url(../ing/dinosaur.jpg);
+background-repeat. no-repeat;
+background-size: contain;
+height: 200px;
+}
+					</code>
+				</pre>
+				<p>Basta ahora el siguiente codigo para que la imagen se muestre como imagen de fondo de un
+					párrafo cuyo atributo class es "fondodinosaurio2". Aunque el parrafo no tenga ningun contenido la imagen se mostrara, porque hemos forzado la altura de 200px. 
+				</p>
+				<pre>
+			<code class="language-html">
+&lt;p class="fondodinosaurio2"&gt;
+&lt;/p&gt;
+			</code>
+					   </pre>
+					   <p>La imagen se veria así</p>
+				<div>
+					<p class="fondodinosaurio2"></p>
+					<pre></pre>
+					<hr width=100%  size=6   noshade="noshade">
+					<p></p>
+					<h1 class="azulcobalto centrar">Video y Audio</h1>
+					<p></p>
+					<h2 class="azulcobalto">Audio</h2>
+					Puedes incrustar video fácilmente en tu web usando el elemento HTML5 &lt;video&gt;. Crea una carpeta
+					videos en tu carpeta resources, copia los videos que se adjuntan y añade el siguiente código a tu
+					página
+					<pre>
+						<code class="language-html">
+						
+	&lt;video sre="resources/videos/videolocal.mp4" controls
+	width="320" height="240">&lt;/video&gt;
+						</code>
+					</pre>
+						<p>Los elementos a destacar son:</p>
+						<p><strong>src:</strong> Contiene una ruta al video que deseas incrustar. Funciona de la misma manera. Los atributos
+						<strong>width</strong> y <strong>height</strong> definen el ancho y alto del marco en el que se mostrará el video.</p>
+						<pre></pre>
+						<strong>controls:</strong> Los usuarios deben ser capaces de controlar la reproducción de video y audio (esto es
+						especialmente crítico en personas que padecen epilepsia). Se debe utilizar el atributo controls para
+						incluir la interfaz de control del browser, o construir la nuestra utilizando la JavaScript API
+						apropiada. Como mínimo la interfaz debe incluir una manera de empezar y terminar la
+						reproducción, y ajustar el volumen.
+						<pre></pre>
+						<p>El video se muestra así:</p>
+				<video src="resources/videos/videolocal.mp4" controls
+				width="320" height="240"></video>
+				<pre></pre>
+				<h2 class="azulcobalto">Incrustar video de youtube</h2>
+<p>Podemos compartir en nuestra web un video de youtube mediante el uso del elemento <strong>iframe</strong>.Un elemento <strong>iframe</strong> representa un contexto de navegacion incrustado, permitiendo incluir otra pagina html dentro de la actual. Youtube en sus videos añade un enlace "compartir"
+mediante el cual podeis copiar el elemento iframe necesario para que el video se incrustre en vuestra pagina. A continuación se muestra un video del mejor guitarrista de la historia del flamenco</p>
+						<pre>
+							<code class="language-html">
+			&lt;iframe width="800px"
+			height="315"
+			src="https://www.youtube.com/embed/2oyhlad64-s"
+			frameborder="0"
+			allow="accelerometer";
+			autoplay; clipboard-write;
+			encrypted-media; gyroscope; picture-in-picture;
+			allowfullscreen&gt;&lt;/iframe&gt;
+							</code>
+						</pre>
+					<iframe width="800px"
+					height="315px"
+					src="https://www.youtube.com/embed/2oyhlad64-s"
+					frameborder="0"
+					allow="accelerometer;
+					autoplay; clipboard-write;
+					encrypted-media; gyroscope; picture-in-picture";
+					allowfullscreen></iframe>
+						<pre></pre>
+						<h2 class="azulcobalto">Audio</h2>
+						<p>El elemento <span class="etiqueta">&lt;audio&gt;</span> funciona exactamente de la misma manera que el elemento <span class="etiqueta">&lt;video&gt;</span> con algunas diferencias de como se escribe, a continuacion. Un ejemplo típico podría ser asi: </p>
+						<pre>
+							<code class="language-html">
+	&lt;audio controls&gt;
+	&lt;source src="resources/audio/example.mp3" type="audio/mp3"&gt;
+	&lt;source src="vipper.ogg" type="audio/ogg"&gt;
+	&lt;p&gt;Your browser doesn't support HTML5 audio. Here is a &lt;a href="vipper.mp3"&gt;link>
+							</code>
+						</pre>
+						<audio controls>
+							<source src="resources/audio/new-year-day.mp3" type="audio/mp3">
+							<source src="vipper.ogg" type="audio/ogg">
+							<p>Your browser doesn't support HTML5 audio. Here is a <a href="vipper.mp3">link>
+</a>
+</p>
+</audio>
+<pre></pre>
+
+					<p>Esto ocupa menos espacio que un reproductor de video, ya que no hay un componente visual; solo
+necesita mostrar los controles para reproducir el audio. Otras diferencias con respecto al video
+HTMLS som las siguentes
+<ul>
+<li>El elemento &lt;audio&gt; no soporta Los atributos width/height — de nuevo, no hay un
+componente visual, por no que no hay nada a lo que asignar un width o height (ancho o altob.</li>
+<li>Tampoco es compatible con él atributo poster — de nuevo , no hay componente visual.
+</ul>
+<h2 class="azulcobalto">Insertar iframe de audio procedente se SoundCloud</h2>
+<p>La compañía SoundCloud (https://soundcloud.com/) permite insertar un reproductor de audio en
+en nuestras páginas, para reproducir la canción que eljamos de entre todo el contenido que tienen, El
+procedimiento es análogo al Que 56 hizo én el apartado anterior gara insertar dn video de yotituEnz.
+Primero localizamos la canción a repreducir y obtenemos iframe con la fuente direccionando el
+archivo de aude a reproducir.</p>
+
+<iframe width="100%" height="300"
+scrolling="no"
+frameborder="no"
+src="https://soundcloud.com/u2/with-or-without-you-1?in=u2/sets/the-best-of-1980-1990-b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"></iframe>
+
+				</div>
+		</main>
+		<footer>
+			<h2>&copy;VS1ASIR 2023</h2>
+		</footer>
+	</div>
+
+</body>
+
+</html>

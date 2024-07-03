@@ -1,0 +1,118 @@
+.fondodinosaurio{
+    background-image: url(../img/dinosaur.jpg);
+    }
+.fondodinosaurio2{
+        background-image: url(../img/dinosaur.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 200px;
+        }
+        
+ html{
+ font-family: 'Lucida Sans';  
+}
+h1{
+    margin:0;
+    padding:0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../img/html5.png);
+    height: 200px;
+}
+footer {
+    text-align: center;
+    background-color: #013A5B;
+    color: rgb(242, 241, 253);
+   /* bottom: 0px;
+    position: fixed;*/
+    width: 1200px;
+    margin: 0 auto;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+main {
+    background-color:  rgb(242, 241, 253);
+    display:flex;
+}
+nav {
+    flex:0 0 200px;
+}
+.content{
+    flex:1;
+    padding:20px;
+}
+.content-index{
+    flex:1;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+ul.menu,
+li.menuitem {
+    padding: 0;
+    margin: 0;
+}
+
+li.menuitem {
+    list-style-type: none;
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgb(139, 25, 25);
+    font-size: 18px;
+}
+li.menuitem a{
+    color: rgba(2, 2, 97, 0.753);
+}
+li.menuitem:hover{
+    background-color: rgba(2, 2, 97, 0.753);
+    color: aliceblue;
+}
+li.menuitem:hover a{
+    color: aliceblue;
+}
+
+.centrar {
+    text-align: center;
+}
+
+
+
+/* Añadidos desde estilo.css */
+
+a {
+    text-decoration: none;
+}
+a.especial{
+    color:red;
+    font-size: 1.25em;
+}
+a.especial:hover{
+    text-decoration: underline;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.azulcobalto {
+    color: cornflowerblue;
+}
+.etiqueta{
+    color:red;
+}
+.etiquetatitulo{
+    color: rgb(3, 62, 172);
+}
+

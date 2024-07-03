@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="resources/css/estilo.css" />
+    <link rel="icon" href="resources/img/azarquiel.ico" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/stackoverflow-light.min.css">
+    <link rel="stylesheet" href="resources/css/tablahorario.css">
+    <script src="resources/js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+        </header>
+        <main>
+            <nav>
+                <ul class="menu">
+                    <li class="menuitem"><a href="index.html">Home</a></li>
+                    <li class="menuitem"><a href="texto.html">Elementos de texto</a></li>
+                    <li class="menuitem"><a href="enlaces.html">Hipervinculos</a></li>
+                    <li class="menuitem"><a href="tablas.html">Tablas</a></li>
+                    <li class="menuitem"><a href="multimedia.html">Multimedia</a></li>
+                    <li class="menuitem"><a href="formularios.html">Formularios</a></li>
+                    <li class="menuitem"><a href="formpago.html">Formulario de pago</a></li>
+                    <li class="menuitem"><a href="formhtml5.html">Form html5</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h1 class="azulcobalto centrar">Creación de hipervínculos</h1>
+                <h2 class="azulcobalto">¿Qué es un vinculo?</h2>
+                <pre></pre>
+                <p> Los hipervínculos nos permiten vincular documentos a otros documentos o recursos, vincular a
+                    partes específicas de documentos o hacer que las aplicaciones estén disponibles en una dirección
+                    web. Prácticamente cualquier contenido web se puede convertir en un enlace que, al pulsarlo
+                    (activarlo), dirija el navegador a la dirección web a la que apunta el enlace (URL).</p>
+                <pre></pre>
+
+                Una URL (Localizador uniforme de de recursos) puede apuntar a archivos HTML, archivos de texto,
+                imágenes, documentos de texto, archivos de audio o vídeo, y cualquier otra cosa que se pueda
+                mostrar en la web. Si el navegador no sabe cómo manejar el archivo, te preguntará si lo quieres
+                abrir (en cuyo caso la tarea de abrirlo y manejarlo se transferirá a la aplicación nativa instalada en
+                el dispositivo) o si lo quieres descargar (en cuyo caso podrás ocuparte de él más tarde).
+                <pre></pre>
+                Anatomia de un enlace
+                <pre></pre>
+                Un enlace básico se crea incluyendo el texto o cualquier otro contenido que queramos convertir en
+                un enlace dentro de un elemento ancla<span class="etiqueta">&lt;a&gt;</span>, proporcionando a través
+                del atributo href la dirección
+                web hacia dónde queremos que apunte el enlace. La url que permite crear un hipervínculo al logo
+                del sitio web de nuestro instituto es:
+                <pre></pre>
+                http://www.ies-azarquiel.es/images/logosazarquiel/logoiesfseif.png
+                <pre></pre>
+
+                El atributo title permite añadir información adicional sobre dicho enlace, como por ejemplo el tipo
+                de información que contiene la página. Podemos usar el atributo title para completar el
+                hipervínculo anterior de forma que muestre información contextual relacionada con la imagen.
+                <pre></pre>
+
+                El atributo target nos permite decidir si el hipervínculo se abrirá en una pestaña nueva
+                <span class="etiqueta">(target="_blank)</span>
+                <pre></pre>
+
+                El código que permite crear un hipervínculo a la imagen corporativa de nuestro instituto, cuya url
+                hemos mencionado antes sería:
+                <pre></pre>
+                <pre>
+                        <code class="language-html">
+        &lt;a href="http://www.ies-azarquiel.es/images/logosazarquiel/logoiesfseif.png"
+        title="Imagen corporativa del I.E.S Azarquiel" target="_blank"&gt;Logo del I.E.S Azarquiel&lt;/a&gt;
+                        </pre>
+                </code>
+                <p>Prueba su fuctonamiento pulsando en el siguiente hipervinculo:</p>
+                <a href="http://www.ies-azarquiel.es/images/logosazarquiel/logoiesfseif.png"
+                    title="Imagen corporativa del I.E.S. Azarquiel" target="_blank">Logo del I.E.S. Azarquiel</a>
+                <h2 class="azulcobalto">Convertir bloques de contenido en enlaces</h2>
+                <p>
+                Podemos convertir cualquier contenido en un enlace, incluso elementos de bloque y elementos en
+                línea. Por ejemplo: si queremos convertir una imagen en un hipervínculo, usaremos un elemento
+                &lt;a&gt; encerrando a la imagen.</p>
+
+                Usamos la referencia a la imagen de nuestro instituto para convertirla en un enlace a la url
+                http://www.ies-azarquiel.es
+                
+                <h1 class="azulcobalto">Urls y rutas</h1>
+                <pre></pre>
+
+                Una localizadora uniforme de recursos (URL, de las iniciales en inglés de «Uniform Resource
+                Locator») es simplemente una secuencia de caracteres de texto que definen donde está situado
+                algo en la web. Por ejemplo, la página de Mozilla está ubicada en https:/ /www.mozilla.org/es-ES/.
+
+                Las URLs utilizan rutas para encontrar los archivos. Las rutas especifican dónde se encuentra el
+                archivo que buscas dentro del sistema de archivos.
+                <pre></pre>
+
+                <p>descomprimir el archivo comprimido que se adjunto con la presente práctica, se crea la
+                estructura de directorios que da soporte a este sitio web en construcción.
+                El directorio <strong>raiz</strong> de la misma se llama HtmlTutorial.
+                <pre></pre>
+
+                <p>En el directorio raiz se situa el archivo index.html que suele ser el punto de entrada a un sitio web.</p>
+                <p>Si queremos enlazar recursos (páginas, imágenes, etc) que están alojados en nuestro sitio web,
+                tendremos que tener en cuenta si los mismos se hayan en el mismo directorio que la página desde
+                la que vamos a enlazarlos o en un directorio distinto, que podrá estar situado por debajo o por
+                encima dentro de la jerarquía de carpetas que contienen el contenido de nuestra web.</p>
+
+                <p<strong>En el mismo directorio</strong>
+                index.html del nivel más alto) que apunte al archivo texto.html, simplemente especificaremos el
+                nombre del archivo al que hacemos referencia, porque se encuentra en el mismo directorio en el
+                que se encuentra el archivo index.html desde donde lo queremos llamar. Por lo tanto, usamos la
+                URL texto.html — veamos el código:
+                <pre></pre>
+
+                <p>Si queremos incluir un hipervínculo dentro del archivo index.html desde donde lo
+                    queramos llamar. Por lo tanto usamos la URL texto.html -- Veamos el codido.</p>
+                <pre></pre>
+                <pre>
+                        <code class="language-html">
+
+                &lt;a href="texto.html"&gt;
+                        </code>
+                
+</pre>
+                <strong>Bajando por la estructura de directorios:</strong>Creemos una carpeta a la que llamaremos "pdf"
+                y
+                situemos dentro de ella una copia del horario de grupo que puedes encontrar en el enunciado
+                de la práctica, en la plataforma classroom. A continuación vamos a crear un hipervínculo para que al
+                pulsar sobre él muestre el archivo horarioVS1ASIR.pdf en una pestaña nueva.
+                <pre></pre>
+                <p>El Hipervinculo se construira asi</p>
+                <pre></pre>
+                <pre>
+                    <code class="language-html">
+
+                        &lt;a href="pdfs/horarioVS1ASIR.pdf" title="Horario del grupo VS1ASIR"
+                            target="_blank"&gt;Ver Horario&gt;
+                    </code>
+                    </pre>
+                <pre></pre>
+                <a href="pdfs/horarioVS1ASIR.pdf" title="Horario del grupo VS1ASIR" target="_blank"><span
+                        class="etiqueta">Ver Horario</span></a>
+                <pre></pre>
+                <p>Si queremos que al pulsar sobre el hipervinculo se inicie la descarga del archivo de forma
+                    automatica, el enlace apuntara a la carpeta que contiene el recurso y especificamos la descarga con
+                    el atributo
+                    download. El enlace reescrito quedara de la siguiente forma:</p>
+                <pre></pre>
+                <pre>
+                            <code class="language-html">
+                    &lt;a href="pdfs" download="horarioVS1ASIR.pdf" title="Horario del grupo VS1ASIR"
+                            target="_blank"&gt;Descargar Horario VS1ASIR&gt;
+                            </code>
+                        </pre>
+                <a href="pdfs" download="horarioVS1ASIR.pdf" target="_blank"><span class="etiqueta">Descargar Horario
+                        VS1ASIR</span></a>
+                <pre></pre>
+                <strong>Subiendo por la estructura de directorios:</strong>Hay veces que también necesitamos subir en la
+                estructura de directorios para direccionar un recurso.
+
+                Un ejemplo lo tenemos en la hoja de estilos, donde hemos usado la siguiente propiedad asociada
+                al elemento header: <span class="etiqueta">Background-image url(../img/html5.png);</span>
+
+                Con ../ subimos un nivel en el arbol de directorios, desde estilo.css a la carpeta css, desde ahí con
+                /img nos desplazamos a la carpeta img para acceder a la imagen html5.png.
+
+                <h2 class="azulcobalto">Enlace hacia una Zona específica de un documento</h2>
+
+                Vamos a crear un hipervínculo que nos permita situarnos en el apartado "Anatomia de un enlace”.
+                Para ello hay que asignar previamente un atributo id al elemento hacia el que apuntamos. Lo
+                hacemos así:
+                <pre>
+                    <code class="language-html">
+
+                &lt;h2 id="anatomiaenlace" class="azulcobalto">Anatomia de un enlace&lt;/h2&gt;
+
+                    </code>
+                </pre>
+
+
+                Posteriormente para hacer referencia a este id concreto, lo añadiremos al final de la URL precedido
+                por una almohadilla.
+                <pre>
+                    <code class="language-html">
+                        &lt;a href="enlaces.html#anatomiaenlace" title="Anatomia de un enlace">
+                        Ir a anatomia de un enlace&lt;/a&gt;
+
+
+                    </code>
+                </pre>
+
+                <h2 class="azulcobalto">URL absolutas y relativas</h2>
+                <pre></pre>
+                Dos términos que encontrarás en la Web son <strong>URL absoluta y URL relativa:</strong>
+                <pre></pre>
+                <p><strong>URL Absoluta:</strong> Hace referencia a una dirección definida por su ubicación absoluta en la web, esta
+                incluye el protocolo, el nombre del dominio y la cadena de consulta</p>
+                <p>//host:port/path?queryStringtfragment"</p>
+                <pre></pre>
+
+                <p>La queryString (cadena de consulta) permite enviar información adicional al servidor de forma que
+                este construya la página con un contenido que depende de la información que es enviada a través
+                de esa cadena de consulta.</p>
+                <pre>
+
+                    </pre>
+                <p>Las páginas web construidas de esta forma se denominan páginas web dinámicas puesto que su
+                contenido cambia dependiendo de los parámetros de consulta. La cadena de consulta está formada
+                por pares de la forma <strong>variable1=valor1&variable2=valor26......Evariablen=valorn</strong></p>
+                    <pre></pre>
+                <p>Ejemplo:</p>
+                <strong>https://delphos.jccm.es/delphos/controlador?operacion=consultaralumnoá4nie=12345</strong>
+                
+                <p>Esta URL usa la cadena de consulta para informar al servidor de que la acción que quiere llevar a
+                cabo es: consultar alumno y que el alumno a consultar es aquel cuyo nie es 12345</p>
+                <p>Las páginas de inicio de un sitio web (tipicamente index.html, index.php, index.jsp) a veces
+                pueden omitirse puesto qe los servidores por defecto buscan en el directorio raiz un archivo con
+                uno de esos nombres para servirlo. El archivo de inicio se puede establecer mediane políticas de
+                uso del servidor web que usemos.</p>
+
+                <p>Puedes comprobar esto mediante el navegador embebido que carga visual studio code. Una vez e
+                con el sitio que estamos realizando, si escribes en la barra de direcciones: http://127.0.0.1:5500/
+                verlas que la página que se muestra es la index.html.</p>
+
+                <p><strong>Una URL relativa:</strong> Hace referencia a una dirección que depende de la posición del archivo desde
+                donde se utiliza — son las que vimos en la sección anterior.</p>
+
+                <p class="centrar"><a href="enlaces.html"><img src="resources/img/arrow.png" alt="Volver Arriba"/></a></p>
+        
+                    
+
+                <div>
+
+                </div>
+        </main>
+        <footer>
+            <h2>&copy;VS1ASIR 2023</h2>
+        </footer>
+    </div>
+
+</body>
+
+</html>

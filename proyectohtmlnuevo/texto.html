@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="resources/css/estilo.css" />
+    <link rel="icon" href="resources/img/azarquiel.ico" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/stackoverflow-light.min.css">
+    <script src="resources/js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+        </header>
+        <main>
+            <nav>
+                <ul class="menu">
+                    <li class="menuitem"><a href="index.html">Home</a></li>
+                    <li class="menuitem"><a href="texto.html">Elementos de texto</a></li>
+                    <li class="menuitem"><a href="enlaces.html">Hipervinculos</a></li>
+                    <li class="menuitem"><a href="tablas.html">Tablas</a></li>
+                    <li class="menuitem"><a href="multimedia.html">Multimedia</a></li>
+                    <li class="menuitem"><a href="formularios.html">Formularios</a></li>
+                    <li class="menuitem"><a href="formpago.html">Formulario de pago</a></li>
+                    <li class="menuitem"><a href="formhtml5.html">Form html5</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h1 class="azulcobalto centrar">Fundamentos de texto en HTML</h1>
+                <pre></pre>
+                <h2 class="azulcobalto">Encabezados y Parrafos</h2>
+                <pre></pre>
+                <p>En HTML, cada parrafo tiene que estar determinado por un &lt;p&gt;</p>
+
+               <p> Ejemplo:</p>
+	<pre>
+		<code class="languaje-html">
+                <p>&lt;Soy un parrafo&gt;</p>
+	</pre>
+		</code>
+
+
+                    
+                <p>Establecemos los tïtulos de los encabezados de las diferentes secciones de un texto mediante los
+                    enczabezados. Tenemos seis elementos de encabezados<font color="red">
+                        &lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</font>
+                </p>
+                <p>El titulo de este documento esta marcado con <font color="red">&lt;h1&gt;</font>
+                </p>
+                <pre>
+                    </pre>
+                <p>El parrafo es un elemento de bloque, siempre comienza en una linea y el navegador genera un
+                    margen de 16 pixeles entre el contenido anterior y posterior al parrafo. A veces queremos saltar
+                    una linea en un parrafo sin tener un parrafo nuevo. Podemos usar para ello la etiqueta <font
+                        color="red">&lt;pre&gt;</font>
+                </p>
+                <pre>
+                </pre>
+                <p>A veces queremos que una parte de un parrafo tenga una presentación diferente del resto
+                    Usamos para ello la etiqueta <font color="red">&lt;span&gt;</font> junto con el atributo class
+                    para asosiar la clase de la hoja de estilos
+                    que queremos dar a esa porción independiente de texto. Para que en este parrafo la etiqueta span
+                    salga resaltada en rojo, hemos usado <span class="etiqueta">&lt;span class="etiqueta"&gt;</span>
+                </p>
+                <h1 class="azulcobalto">Listas</h1>
+                <p>Las Listas las usamos continuamente para enumerar una serie de elementos (personas, ingredientes,
+                    provincias...) que guardan una relacción entre ellos </p>
+                <pre>
+                </pre>
+                <h1 class="azulcobalto">Listas desordenadas</h1>
+                <p>Las Listas no ordenadas se usan para marcar listas de articulos cuyo orden no es importante.</p>
+                <pre>
+                </pre>
+                <p>Cada lista desordenada comienza con un elemento <span class="etiqueta">&lt;ul&gt;</span> que
+                    determina todos los elementos de la lista. Cada elemento de la lista esta delimitado por una
+                    etiqueta <span class="etiqueta">&lt;li&gt;</span></p>
+                <p>Ejemplo:</p>
+                <pre>
+                    <code class="language-html">
+                        &lt;ul&gt;
+                            &lt;li&gt;Leche&lt;li&gt;
+                            &lt;li&gt;Huevos&lt;li&gt;
+                            &lt;li&gt;pan&lt;li&gt;
+                            &lt;li&gt;hummus&lt;li&gt;
+                        &lt;ul&gt;
+                    </code>
+                </pre>
+                <p>La presentación por defecto de la lista anterior sería</p>
+                <pre>
+                </pre>
+                <ul>
+                    <li>leche</li>
+                    <li>huevos</li>
+                    <li>pan</li>
+                    <li>hummus</li>
+                </ul>
+                <pre>
+                  </pre>
+                <h1 class="azulcobalto">Listas Ordenadas</h1>
+                <p>Las listas ordenadas son aquellas en la que el orden de los elementos si importa</p>
+                <pre>
+
+                  </pre>
+                <p>La estructura de marcado es la misma que para las listas no ordenadas, exepto que debes
+                    determinar los elementos de la lista con una etiqueta <span
+                        class="etiqueta">&lt;ol&gt;</span>(ordened list), en lugar de <span
+                        class="etiqueta">&lt;ul&gt;</span> </p>
+                <pre>
+                                <code class="language-html">
+                                
+                 &lt;ol&gt;
+                    &lt;li&gt;Conduce hasta el final de la calle&lt;li&gt;
+                    &lt;li&gt;Gira a la Derecha&lt;li&gt;
+                    &lt;li&gt;Sigue derecho por las dos glorietas&lt;li&gt;
+                    &lt;li&gt;Gira a la izquierda en la tercera glorieta&lt;li&gt;
+                    &lt;li&gt;El colegio esta a tu derecha&lt;li&gt;
+                 &lt;ol&gt;
+                </pre>
+                </code>
+                <p>La presentación por defecto de la lista anterior sería</p>
+                <ol>
+                    <li>Conduce hasta el final de la calle</li>
+                    <li>Gira a la Derecha</li>
+                    </li>
+                    <li>Sigue derecho por las dos glorietas</li>
+                    <li>El colegio esta a tu derecha</li>
+                    <ol>
+                        </pre>
+                        <pre></pre>
+                    <h1 class="azulcobalto">Listas de descripciones</h1>
+                <p> El propósito de estas listas es marcar un conjunto de elementos y sus descripciones asociadas,
+                        como términos y definiciones, o preguntas y respuestas. Veamos un ejemplo de un conjunto de
+                        términos y definiciones:</p>
+                        
+                <p>Las listas de descripción utilizan un contenedor diferente al de los otros tipos de listas — 
+                        («description list» o lista de descripciones); además, cada término está envuelto en un elemento
+                        &lt;dt&gt; («description term» o término a describir), y cada descripción está envuelta en un elemento
+                        &lt;dd&gt; («description definition» o definición de descripción).Ejemplo:</p>
+                 <pre>
+		<code class="language-html">
+         &lt;dl&gt;
+        &lt;dt&gt;soliloquio&lt;/dt&gt;
+         &lt;dd&gt;En las obras dramáticas, corresponde a cuando un personaje se habla a sí mismo&lt;/dt&gt;
+        &lt;dt&gt; monólogo  &lt;/dt&gt;
+        &lt;dd&gt;Cuando un personaje habla de sus pensamientos en voz alta para compartirlo&lt;dd&gt;
+        &lt;/dt&gt;
+		</pre>                        
+		</code>
+                        El resultado de la lista anterior es
+               <pre>
+	       
+  			  <dl>
+                        <dt>soliloquio</dt>
+                        <dd>En las obras dramáticas, corresponde a cuando un personaje se habla a sí mismo</dt>
+                        <dt> monólogo  </dt>
+                        <dd>Cuando un personaje habla de sus pensamientos en voz alta para compartirlo<dd>
+                        </dt>
+			</pre>
+				</code>
+                  
+                        <h1 class="azulcobalto">Enfasis e Importancia</h1>
+                        <pre></pre>
+                        <h2 class="azulcobalto">Enfasis</h2>
+                        <p>Cuando queremos dar énfasis al lenguaje hablado, acentuamos ciertas palabras y así alteramos
+                            sutilmente el significado de lo que decimos. De manera similar, en el lenguaje escrito
+                            ponemos
+                            palabras en cursiva para destacarlas. Por ejemplo, las dos siguientes frases tienen
+                            diferente
+                            significado:</p>
+                        <pre></pre>
+                        Me alegro de que no llegues tarde.
+                        <pre></pre>
+                        Me alegro de que no llegues tarde.
+                        <pre></pre>
+                        <p>En HTML usamos el elemento <span class="etiqueta">&lt;em&gt;</span>(«emphasis») para marcar
+                            estos casos.</p>
+                        <pre></pre>
+                        <p>El documento logra entonces transmitir una lectura más interesante y además así lo reconocen
+                            los
+                            lectores de pantalla, que lo expresan con un diferente tono de voz. El navegador, de manera
+                            predeterminada, aplica el estilo de letra itálica, pero no debes utilizar esta etiqueta
+                            solamente para
+                            establecer el estilo de letra itálica. Para usar ese estilo, debes utilizar únicamente la
+                            etiqueta del
+                            elemento<span class="etiqueta"> &lt;span&gt;</span> y algo de CSS u otra etiqueta con el
+                            elemento </p>
+
+                        <h1 class="azulcobalto">Importancia Fuerte</h1>
+                        <pre></pre>
+                        <p>Para enfatizar palabras importantes al hablar solemos acentuarlas, y al escribir lo hacemos
+                            en
+                            estilo negrita. Por ejemplo</p>
+
+                        <p>Este líquido es <strong>altamente toxico</strong>
+                        <pre></pre>
+                        <p>Cuento contigo. ¡No llegues tarde!</p>
+                        <pre></pre>
+                        <p>En HTML usamos el elemento &lt;strong&gt;(importancia fuerte) para marcar tales expresiones
+                        </p>
+
+                        <h1 class="azulcobalto">Negrita, cursiva y subrayado</h1>
+                        <pre></pre>
+                        </p> Si queremos poner un texto en cursiva porque tradicionalmente se hace asi, como por ejemplo
+                        en
+                        los nombres científicos de la especies, usaremos la etiqueta &lt;i&gt; puesto que en este caso
+                        la
+                        semántica es diferente. En este caso no queremos enfatizar.</p>
+
+                        <p>Ejemplo: Lobo (Canis Lupus)
+
+                        <p>Lo mismo se aplica para el subrayado mediante la etiqueta <span class="etiqueta">
+                                &lt;u&gt;</span> y para la negrita mediante la
+                            etiqueta <span class="etiqueta"> &lt;b&gt;</span>
+
+
+                        <h1 class="azulcobalto">Abrebiaturas</h1>
+                        <pre></pre>
+                        <p>Usaremos la etiqueta <span class="etiqueta">&lt;abbr&gt;</span> para envolver una abreviatura
+                            o acrónimo y proporcionar la
+                            expansión del término mediante el atributo title.</p>
+
+                        <pre></pre>
+                        <p>Ejemplo: Estamos cursando el primer curso del ciclo ASIR.</p>
+                        <h1 class="azulcobalto">Informacion de contacto</h1>
+                        <pre></pre>
+
+                        <p>Usaremos la eligueta &lt;aduress&gt; para envolver la mlormación de contacto,</p>
+
+                        <h1 class="azulcobalto">Superindices y subindices</h1>
+                        <pre></pre>
+
+                        <p>Usaremos la etiqueta &lt;sup&gt; para escribir superíndices. y la etiqueta &lt;sub&gt; para
+                            marcar un
+                            subíndice.</p>
+
+                        <p>Ejemplo</p>
+
+                            <p>X<sup>2</sup></p>
+                            <p>CO<sub>2</sub></p>
+
+            
+
+
+    </div>
+    </main>
+    <footer>
+        <h2>&copy;VS1ASIR 2023</h2>
+    </footer>
+    </div>
+
+</body>
+
+</html>
+                        
+
+
+
+
+            
+
+
+
+                    
